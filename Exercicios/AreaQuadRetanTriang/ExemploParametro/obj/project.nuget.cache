@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "7ymhq7ALE5l0DRvAMIMHtW6E31zgTUg5mdfeHTovJOE4ljDNR26ZLudDLXDd+zLEoDv8iXaA7Asn4lr+pCj/zw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LAB4\\Desktop\\Exercicios\\ExemploParametro\\ExemploParametro\\AreaQuadRetanTriang.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
