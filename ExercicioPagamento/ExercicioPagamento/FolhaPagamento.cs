@@ -61,7 +61,7 @@ namespace ExercicioPagamento
             double DescontoTotal = INAMPS + descFalta + ImpostoDeRenda + DescontoEvent;
             double salLiquido = salBruto - DescontoTotal;
 
-            return $"Nome: {Nome}\nSalário: {Salario}\nValor de horas extras: {HoraExtra}\nSalário família: {salFamilia}\nDesconto INAMPS: {INAMPS}\nFaltas: {Faltas}\nValor em refeições: {GastoRefeicao}\nVales utilizados: {Vales}\nDescontos eventuais: {DescontoEvent}\nImposto de renda: {ImpostoDeRenda}\nSalário líquido: {salLiquido}\nSalário bruto: {salBruto}\nFaltas: {Faltas}";
+            return $"Nome: {Nome}\nSalário: {Salario}\nValor de horas extras: {HoraExtra}\nSalário família: {salFamilia}\nDesconto INAMPS: {INAMPS}\nFaltas: {Faltas}\nValor em refeições: {GastoRefeicao}\nVales utilizados: {Vales}\nDescontos eventuais: {DescontoEvent}\nImposto de renda: {ImpostoDeRenda}\nSalário líquido: {salLiquido}\nSalário bruto: {salBruto}";
         }
     }
 }
