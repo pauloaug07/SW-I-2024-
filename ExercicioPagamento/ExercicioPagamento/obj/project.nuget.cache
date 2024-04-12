@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bIWhT6O/jJS/C7u5DwY/2spQBv3qfNTitBkr7kF555gnathBfvRzYJgs3ylh1WV/dMqBpzzUaSK42lOVjjUFBg==",
+  "dgSpecHash": "8JNQoBGCsj/0jvUMVBrXgMBjujOji4JfvGvHK4ccM/kO/0qg/Dp7CipBc+7io4LjwwV877UmbfqEqpOK4R7SQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paulo\\Desktop\\Exercicios\\ExercicioPagamento\\ExercicioPagamento\\ExercicioPagamento.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\LAB4\\Desktop\\Exercicios\\ExercicioPagamento\\ExercicioPagamento\\ExercicioPagamento.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\LAB4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
+  ],
   "logs": []
 }
