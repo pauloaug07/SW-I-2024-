@@ -25,8 +25,8 @@
 
             conta1.ajusta_limite(1000);
             conta1.consulta_saldo();
-            Console.WriteLine("REALIZANDO SAQUE DE R$ 2000,00");
-            conta1.sacar(2000);
+            Console.WriteLine("REALIZANDO SAQUE DE R$ 3000,00");
+            conta1.sacar(3000);
             conta1.consulta_saldo();
         }
     }
