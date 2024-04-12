@@ -22,6 +22,8 @@
             Console.WriteLine("A velocidade do Avião2 é de: " + aviao2.velocidadeAtual() + " km/h.");
             Console.WriteLine("A altitude do Avião2 é de: " + aviao2.altitudeAtual() + " metros.");
 
+            Console.ReadKey();
+
         }
     }
 }
