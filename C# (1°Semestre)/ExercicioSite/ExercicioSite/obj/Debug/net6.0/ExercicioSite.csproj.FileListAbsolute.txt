@@ -1,0 +1,14 @@
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ExercicioSite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ExercicioSite.AssemblyInfoInputs.cache
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ExercicioSite.AssemblyInfo.cs
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ExercicioSite.csproj.CoreCompileInputs.cache
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\bin\Debug\net6.0\ExercicioSite.exe
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\bin\Debug\net6.0\ExercicioSite.deps.json
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\bin\Debug\net6.0\ExercicioSite.runtimeconfig.json
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\bin\Debug\net6.0\ExercicioSite.dll
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\bin\Debug\net6.0\ExercicioSite.pdb
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ExercicioSite.dll
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\refint\ExercicioSite.dll
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ExercicioSite.pdb
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ExercicioSite.genruntimeconfig.cache
+C:\Users\Paulo\Desktop\Exercicios\ExercicioSite\ExercicioSite\obj\Debug\net6.0\ref\ExercicioSite.dll
