@@ -1,5 +1,8 @@
 <?php
-include 'conecta.php';
+
+    include 'conecta.php';
+    $id_clienteSelecionado = $_GET['id_cliente'];
+
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +15,6 @@ include 'conecta.php';
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>CRUD - PHP</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
@@ -127,47 +129,39 @@ include 'conecta.php';
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h1 class="mt-4">Painel de controle</h1>
+                    <h1 class="mt-4">Atualizar clientes</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Site 2C - Turma B</li>
+                        <li class="breadcrumb-item"><a href="index.php">Painel de clientes</a></li>
+                        <li class="breadcrumb-item active">Atualizar clientes</li>
                     </ol>
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            Tabela de clientes
+                    <form action="atualiza_cliente.php?id_clienteSelecionado=<?php echo $id_clienteSelecionado; ?>" method="POST">
+                        
+                        <?php
+                            $sql = "SELECT * FROM clientes WHERE id_cliente = $id_clienteSelecionado";
+                            $consulta = $conexao->query($sql);
+                            while ($dados = $consulta->fetch_assoc()) {
+                        ?>
+                        
+                        <div class="mb-3">
+                            <label for="nome_clienteNovo" class="form-label">Nome</label>
+                            <input type="text" class="form-control" name="nome_clienteNovo" value="<?php echo $dados['nome_cliente']; ?>">
                         </div>
-                        <div class="card-body">
-                            <table id="datatablesSimple">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">Nome</th>
-                                        <th scope="col">E-mail</th>
-                                        <th scope="col">Telefone</th>
-                                        <th scope="col">Ações</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    $sql = "SELECT * FROM clientes";
-                                    $consulta = $conexao->query($sql);
-                                    while ($dados = $consulta->fetch_assoc()) {
-                                        echo "<tr>";
-                                        echo "<td>" . $dados['id_cliente'] . "</td>";
-                                        echo "<td>" . $dados['nome_cliente'] . "</td>";
-                                        echo "<td>" . $dados['email_cliente'] . "</td>";
-                                        echo "<td>" . $dados['telefone'] . "</td>";
-                                        echo "<td>
-                                                    <a href='form_atualiza_cliente.php?id_cliente=" . $dados["id_cliente"] . "'><button class='btn btn-primary'>Editar</button></a>
-                                                    <a href='apaga_cliente.php?id_cliente=" . $dados["id_cliente"] . "'><button class='btn btn-danger'>Apagar</button></a>
-                                                </td>";
-                                        echo "</tr>";
-                                    }
-                                    ?>
-                                </tbody>
-                            </table>
+                        <div class="mb-3">
+                            <label for="email_clienteNovo" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" name="email_clienteNovo" value="<?php echo $dados['email_cliente']; ?>">
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <label for="telefoneNovo" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" name="telefoneNovo" value="<?php echo $dados['telefone']; ?>">
+                        </div>
+
+                        <?php
+                            }
+                        ?>
+
+                        <button type="submit" class="btn btn-primary btn-sm">Atualizar</button>
+                        <button type="reset" class="btn btn-danger btn-sm">Apagar alterações</button>
+                    </form>
                 </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
@@ -190,9 +184,7 @@ include 'conecta.php';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="assets/demo/chart-area-demo.js"></script>
     <script src="assets/demo/chart-bar-demo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-        crossorigin="anonymous"></script>
-    <script src="js/datatables-simple-demo.js"></script>
+    <script src="assets/demo/chart-pie-demo.js"></script>
 </body>
 
 </html>
