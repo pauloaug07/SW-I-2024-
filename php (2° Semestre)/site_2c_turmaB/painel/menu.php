@@ -1,3 +1,17 @@
+<?php
+    session_start();
+
+    if((!isset($_SESSION['id']) == true) && (!isset($_SESSION['nome']) == true) && (!isset($_SESSION['email'])) == true){
+        
+        unset($_SESSION['id']);
+        unset($_SESSION['nome']);
+        unset($_SESSION['email']);
+        
+        header('Location: ../index.html');
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +53,7 @@
                     <li>
                         <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item" href="login.html">Sair</a></li>
+                    <li><a class="dropdown-item" href="logout.php">Sair</a></li>
                 </ul>
             </li>
         </ul>
@@ -115,8 +129,8 @@
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
-                    <div class="small">Logged in as:</div>
-                    Start Bootstrap
+                    <div class="small">Logado como:</div>
+                    <?php echo $_SESSION['nome']; ?>
                 </div>
             </nav>
         </div>

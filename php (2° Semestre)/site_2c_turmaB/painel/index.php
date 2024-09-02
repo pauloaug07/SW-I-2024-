@@ -1,4 +1,15 @@
 <?php
+    session_start();
+
+    if((!isset($_SESSION['id']) == true) && (!isset($_SESSION['nome']) == true) && (!isset($_SESSION['email'])) == true){
+        
+        unset($_SESSION['id']);
+        unset($_SESSION['nome']);
+        unset($_SESSION['email']);
+        
+        header('Location: ../index.html');
+    }
+
     include 'conecta.php';
     include 'menu.php';
 ?>
@@ -40,9 +51,9 @@
                                 echo "<td>" . $dados['email_cliente'] . "</td>";
                                 echo "<td>" . $dados['telefone'] . "</td>";
                                 echo "<td>
-                                                    <a href='form_atualiza_cliente.php?id_cliente=" . $dados["id_cliente"] . "'><button class='btn btn-primary'>Atualizar</button></a>
-                                                    <a href='apaga_cliente.php?id_cliente=" . $dados["id_cliente"] . "'><button class='btn btn-danger'>Deletar</button></a>
-                                                </td>";
+                                            <a href='form_atualiza_cliente.php?id_cliente=" . $dados["id_cliente"] . "'><button class='btn btn-primary'>Atualizar</button></a>
+                                            <a href='apaga_cliente.php?id_cliente=" . $dados["id_cliente"] . "'><button class='btn btn-danger'>Deletar</button></a>
+                                    </td>";
                                 echo "</tr>";
                             }
                             ?>

@@ -1,7 +1,10 @@
 <?php 
+
+    session_start();
+
     require('conecta.php');
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = md5($_POST['senha']); // Criptografia da senha -> DB
 
     $consulta = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
 
@@ -12,11 +15,16 @@
     // var_dump($resultado_usuario);
 
     if ($registros == 1) {
-        // echo "Encontrado.";
+        
+        $_SESSION['id'] = $resultado_usuario['id'];
+        $_SESSION['nome'] = $resultado_usuario['nome'];
+        $_SESSION['email'] = $resultado_usuario['email'];
+
         header('Location: index.php');
     }
     else {
         // echo "Não encontrado.";
         header('Location: ../index.html');
     }
+
 ?>
