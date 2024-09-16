@@ -11,7 +11,8 @@
     }
     
     include 'conecta.php';
-    $id_clienteSelecionado = $_GET['id_cliente'];
+    
+    $id_cliente = $_GET['id_cliente'];
 
     include 'menu.php';
 ?>
@@ -24,11 +25,10 @@
                 <li class="breadcrumb-item"><a href="index.php">Painel de clientes</a></li>
                 <li class="breadcrumb-item active">Atualizar clientes</li>
             </ol>
-            <form action="atualiza_cliente.php?id_clienteSelecionado=<?php echo $id_clienteSelecionado; ?>"
-                method="POST">
+            <form action="atualiza_cliente.php?id_cliente=<?php echo $id_cliente; ?>" method="POST">
 
                 <?php
-                $sql = "SELECT * FROM clientes WHERE id_cliente = $id_clienteSelecionado";
+                $sql = "SELECT * FROM clientes WHERE id_cliente = $id_cliente";
                 $consulta = $conexao->query($sql);
                 while ($dados = $consulta->fetch_assoc()) {
                     ?>
@@ -54,7 +54,7 @@
                 ?>
 
                 <button type="submit" class="btn btn-primary btn-sm">Atualizar</button>
-                <button type="reset" class="btn btn-danger btn-sm">Apagar alterações</button>
+                <button type="reset" class="btn btn-danger btn-sm">Remover alterações</button>
             </form>
         </div>
     </main>
